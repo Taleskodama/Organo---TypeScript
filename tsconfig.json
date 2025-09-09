@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es6", // Compila para uma versão moderna do JS
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true, // Permite importar arquivos .js
+    "skipLibCheck": true, // Pula a verificação de tipos em bibliotecas (d.ts)
+    "esModuleInterop": true, // Melhora a compatibilidade entre módulos CommonJS e ES Modules
+    "allowSyntheticDefaultImports": true, // Permite importações padrão de módulos sem um export padrão
+    "strict": true, // Habilita todas as checagens estritas de tipo
+    "forceConsistentCasingInFileNames": true, // Garante que os nomes dos arquivos sejam consistentes
+    "noFallthroughCasesInSwitch": true, // Evita "fallthrough" em switch-case
+    "module": "esnext", // Usa o sistema de módulos mais moderno
+    "moduleResolution": "bundler", // A forma moderna de resolver módulos, ideal para React
+    "resolveJsonModule": true, // Permite importar arquivos .json
+    "isolatedModules": true, // Garante que cada arquivo possa ser compilado separadamente
+    "noEmit": true, // O TS não vai gerar arquivos JS, o React (CRA/Vite) faz isso
+    "jsx": "react-jsx" // Habilita o JSX moderno do React
+  },
+  "include": [
+    "src" // Diz ao TS para olhar apenas os arquivos dentro da pasta 'src'
+  ]
+}
